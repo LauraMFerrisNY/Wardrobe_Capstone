@@ -6,14 +6,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-
         <Link to="/">
-          <img src={LOGO} alt="Home" height="80rem"/>
+          <img src={LOGO} alt="Home" height="80rem" />
         </Link>
       </div>
       <div className="namebar">
-        <Link to="/">Login</Link>
-        <Link to="/">Register</Link>
+        <Link to="./login">Login</Link>
+        <Link to="/register">Register</Link>
       </div>
     </nav>
   );

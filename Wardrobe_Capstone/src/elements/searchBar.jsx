@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import '../stylesheets/searchBar.css';
+import React, { useState } from "react";
 
 function SearchBar({ items }) {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredItems = items.filter(item =>
+  const filteredItems = items.filter((item) =>
     item.toLowerCase().includes(searchTerm.toLowerCase())
   );
 

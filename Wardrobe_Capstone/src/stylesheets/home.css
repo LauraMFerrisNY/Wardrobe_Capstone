@@ -1,8 +1,84 @@
 .home {
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.leftBox {
+  background-color: #895365;
+  width: 30%;
+  box-shadow: 0 0 5px black;
+}
+
+.rightBox {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Items */
+
+.mainPageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.myOutfitBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-evenly;
+  width: 80%;
+}
+
+.searchBar {
+  flex: 1;
+  margin-top: 1rem;
+  float: left;
+  width: 80%;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+button {
+  width: 8rem;
+  padding: 0.4rem;
+  margin: 0.4rem 0.2rem;
+  background-color: #ffffe8;
+  color: #2c262e;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: thin;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #f8b17f;
+}
+
+@media only screen and (max-width: 1800px){
+
+  .buttonBox {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-    font-size: 2rem;
+    width: 100%;
+  }
 }

@@ -1,15 +1,23 @@
-import '../stylesheets/myOutfitBox.css';
+import { Link } from "react-router-dom";
+import AddItem from "./AddItem";
+import "../stylesheets/home.css";
 
 function myOutfitBox() {
   return (
     <div className="myOutfitBox">
-        <section classname="myOutfitBoxHeader">
-            <input type="text" placeholder="Search..." className="searchBar" />
-            <button className="addOutfitButton">Add Outfit</button>
-            <button className="addItemButton">Add Item</button>
-            <button className="addItemButton">Random Outfit</button>
-        </section>
-            <div className="outfitItems"></div>
+      <input type="text" placeholder="Search..." className="searchBar" />
+      <div className="buttonBox">
+        <Link>
+          <button>Add Outfit</button>
+        </Link>
+        <Link to="/AddItem">
+          <button>Add Item</button>
+        </Link>
+        <Link>
+          <button>Random Outfit</button>
+        </Link>
+      </div>
+      <div className="outfitItems"></div>
     </div>
   );
 }
