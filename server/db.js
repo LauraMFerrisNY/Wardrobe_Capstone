@@ -1,5 +1,5 @@
 const pg = require('pg');
-const client = new pg.Client(process.env.DATABASE_URL || 'postgresql://lauraunix:xinu2413@localhost:5432/wardrobe_db'); //Change source later
+const client = new pg.Client(process.env.DATABASE_URL || 'postgresql://wardrobe_capstone_db_eq63_user:Zht8DXiOmYn2IgbMapRW5rQN7li9CBCf@dpg-cvurdjqdbo4c73f6g8h0-a/wardrobe_capstone_db_eq63'); //Change source later
 const uuid = require('uuid');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
